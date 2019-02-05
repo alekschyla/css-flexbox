@@ -3,8 +3,10 @@
   <head>
     <title>The Net Ninja - CSS Flexbox</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
-  </head>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>  </head>
   <body>
     <div class="wrapper">
 
@@ -20,6 +22,12 @@
           <li><a href="" class="tw">Twitter</a></li>
         </ul>
       </nav>
+
+      <div style="margin: 20px">
+        <span>Layout:</span>
+        <a href="#" class="stack">Stack</a>
+        <a href="#" class="grid">Grid</a>
+      </div>
     
       <section id="blocks">
         <article>
@@ -49,6 +57,14 @@
       </section>
       
     </div>
-    
+
+  <script>
+    $("a.stack").on("click", function () {
+        $("article").addClass("stack");
+    });
+    $("a.grid").on("click", function () {
+        $("article").removeClass("stack");
+    });
+  </script>
   </body>
 </html>
