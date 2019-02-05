@@ -1,5 +1,5 @@
 *{
-    font-family: verdana;
+    font-family: "Yu Gothic", serif;
     margin: 0;
 }
 
@@ -14,8 +14,43 @@ body{
 }
 
 /* menu base styles */
-
-
-
+nav {
+    background-color: #333;
+    font-size: 16px;
+    font-weight: lighter;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding: 10px;
+}
+nav a:hover {
+    background-color: #555;
+}
 
 /* flex styles */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    nav li {
+        flex: 1 1 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
